@@ -1,7 +1,22 @@
 #include<iostream>
+#include <string>
+#include <vector>
+
+#include "taskClass.h"
+
+using namespace std;
+
 
 int main() {
-	std::cout << "Hello World!" << std::endl;
+	vector<Task> tasks;
 
+	string text;
+	cout << "Enter a task: ";
+	getline(cin, text);
+
+	Task task(text);
+	tasks.push_back(task);
+
+	cout << tasks[0].getTask() << endl;
 	return 0;
 }
