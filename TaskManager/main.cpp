@@ -2,14 +2,15 @@
 #include <string>
 #include <vector>
 
-#include "taskClass.h"
+#include "task.h"
 
 using namespace std;
 
 void show(vector<Task>& t) {
 	for(auto el : t)
 	{
-		cout << el.getTask() << endl;
+		cout << el.get() << endl;
+	}
 	}
 }
 
